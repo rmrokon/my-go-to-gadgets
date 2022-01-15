@@ -10,6 +10,7 @@
 -------------------------------------------*/
 body{
     font-family: 'Poppins', sans-serif;
+    
 }
 .container{
     display: flex;
@@ -104,7 +105,7 @@ hr{
                Section-2 Styles 
 -------------------------------------------*/
 .main-collection{
-    margin: 40px 196px;
+    margin: 50px;
     
 }
 
@@ -114,8 +115,8 @@ hr{
 .products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-evenly;
-    grid-gap: 30px;
+    justify-content: space-between;
+    grid-gap: 20px;
 }
 
 .product {
@@ -174,12 +175,37 @@ hr{
 }
 
 .products #see-more {
+    display: flex;
+    flex-wrap: nowrap;
     color: #E02C6D;
     text-decoration: none;
     font-weight: 550;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: violet;
     position: relative;
-    left: 950px;
+    left: 700px;
 }
+
+/* ----------------------------------------
+               Footer Styles 
+-------------------------------------------*/
+footer {
+    width: 100%;
+    background-color: #0A0826;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+.social-icon {
+    margin-right: 15px;
+}
+
 
 
 
