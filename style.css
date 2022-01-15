@@ -377,7 +377,63 @@ footer p {
     body{
         display: flex;
         flex-direction: column;
+    }
+    
+}
 
+/* Tablet Devices */
+
+@media only screen and (min-width: 689px) and (max-width:992px) {
+    
+    header div {
+        display: flex;
+        flex-direction: column;
+    }
+    .upcoming-product-img {
+        background-position-x: center;
+    }
+
+    .intro-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .half-width{
+        width: 100%;
+    }
+    .offer-animi{
+        display: none;
+    }
+    .intro-div{
+        display: flex;
+        flex-direction: column;
+    }
+    .icon-area{
+        display: none;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #see-more {
+        position: relative;
+        left: 116px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
     }
     
 }
