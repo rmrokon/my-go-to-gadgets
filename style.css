@@ -3,6 +3,8 @@
 -------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Lobster&family=Lora&family=Poppins:wght@400;700&family=Roboto:wght@500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora&family=Poppins:wght@300;700&family=Roboto:wght@500&display=swap');
+
 /* ----------------------------------------
                Common Styles 
 -------------------------------------------*/
@@ -81,6 +83,10 @@ header div{
     height: auto;
 }
 
+/* ----------------------------------------
+               Icon Area Styles 
+-------------------------------------------*/
+
 hr{
     border: 0.5px solid lightslategray;
     border-radius: 0.5px;
@@ -93,3 +99,87 @@ hr{
 .icons img{
     margin-right: 40px;
 }
+
+/* ----------------------------------------
+               Section-2 Styles 
+-------------------------------------------*/
+.main-collection{
+    margin: 40px 196px;
+    
+}
+
+.main-collection h3{
+    text-align: center;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    grid-gap: 30px;
+}
+
+.product {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 14px;
+}
+
+.product img{
+    width: 300px;
+    height: 256px;
+}
+
+.product h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #18191F;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.product .price {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.87);
+    margin-bottom: -8px;
+    margin-top: -8px;
+}
+.rating {
+    margin-bottom: -8px;
+}
+
+.filled {
+    color: orange;
+}
+
+.empty {
+    color: rgba(128, 128, 128, 0.514);
+}
+
+.short-description {
+    color: #787885;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+.fa-star, .fa-star-half-alt {
+    font-size: 12px;
+}
+
+.rating span {
+    color: #5E6366;
+    font-family: 'Roboto', sans-serif;
+}
+
+.products #see-more {
+    color: #E02C6D;
+    text-decoration: none;
+    font-weight: 550;
+    position: relative;
+    left: 950px;
+}
+
+
+
