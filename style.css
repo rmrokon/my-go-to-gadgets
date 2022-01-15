@@ -46,7 +46,7 @@ header div{
                Section-1 Styles 
 -------------------------------------------*/
 
-.intro{
+.intro-div{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -322,6 +322,64 @@ footer p {
 
 .social-icon {
     margin-right: 5px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width:688px){
+
+    header div {
+        display: flex;
+        flex-direction: column;
+    }
+    .upcoming-product-img {
+        background-position-x: center;
+    }
+
+    .intro-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .half-width{
+        width: 100%;
+    }
+    .offer-animi{
+        display: none;
+    }
+    .intro-div{
+        display: flex;
+        flex-direction: column;
+    }
+    .icon-area{
+        display: none;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    #see-more {
+        position: relative;
+        left: 116px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+
+    }
+    
 }
 
 
