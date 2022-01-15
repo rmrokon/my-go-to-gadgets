@@ -10,16 +10,10 @@
 -------------------------------------------*/
 body{
     font-family: 'Poppins', sans-serif;
-    
+    /* margin-right: 40px;
+    margin-left: 40px; */
 }
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 120px;
-    margin-left: 120px;
-    margin-bottom: 40px;
-}
+
 
 /* ----------------------------------------
                Header Styles 
@@ -50,9 +44,20 @@ header div{
 /* ----------------------------------------
                Section-1 Styles 
 -------------------------------------------*/
+
+.intro{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 120px;
+    margin-left: 120px;
+    margin-bottom: 5%;
+}
+
 .half-width{
     width: 50%;
 }
+
 .upcoming-product h2{
     font-size: 52px;
     font-weight: 700;
@@ -72,11 +77,12 @@ header div{
     font-size: 16px;
 }
 .upcoming-product-img {
+    padding-left: 13px;
     background-image: url(images/Circle\ design.svg);
     background-repeat: no-repeat;
     background-size: 65%;
-    background-position-y: 5px;
-    background-position-x: 90px;
+    /* background-position-y: 5px; */
+    background-position-x: 180px;
     
 }
 .upcoming-product-img img{
@@ -105,23 +111,33 @@ hr{
                Section-2 Styles 
 -------------------------------------------*/
 .main-collection{
-    margin: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
     
 }
 
 .main-collection h3{
     text-align: center;
+    margin-bottom: 3%;
+    font-size: 28px;
+    color: #3A3A3A;;
 }
 .products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
-    grid-gap: 20px;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 40px;
 }
 
 .product {
     width: 300px;
-    height: auto;
+    height: 435px;
     border-radius: 5px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     padding: 14px;
@@ -174,24 +190,23 @@ hr{
     font-family: 'Roboto', sans-serif;
 }
 
-.products #see-more {
-    display: flex;
-    flex-wrap: nowrap;
-    color: #E02C6D;
+#see-more {
+   position: relative;
+   left: 485px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+}
+
+#see-more a {
     text-decoration: none;
-    font-weight: 550;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: violet;
-    position: relative;
-    left: 700px;
+    color: #E02C6D;
+    font-weight: 700;
 }
 
 /* ----------------------------------------
                Footer Styles 
 -------------------------------------------*/
 footer {
-    width: 100%;
     background-color: #0A0826;
     color: white;
     text-align: center;
@@ -203,7 +218,7 @@ footer p {
 }
 
 .social-icon {
-    margin-right: 15px;
+    margin-right: 5px;
 }
 
 
