@@ -10,6 +10,7 @@
 -------------------------------------------*/
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 0px
     /* margin-right: 40px;
     margin-left: 40px; */
 }
@@ -90,6 +91,104 @@ header div{
     height: auto;
 }
 
+/* Animation Area Styles */
+
+.offer-animi{
+    margin-top: 25%;
+    position: absolute;
+    top: -170px;
+    left: 300px;
+}
+.offer-animi h2{
+    color: #2e282a;
+}
+
+@keyframes clock {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: center;
+    }
+
+    25% {
+        transform: rotate(90deg);
+        transform-origin: center;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        transform-origin: center;
+    }
+
+    75% {
+        transform: rotate(270deg);
+        transform-origin: center;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        transform-origin: center;
+    }
+
+}
+
+@keyframes clock-2 {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: center;
+    }
+
+    25% {
+        transform: rotate(45deg);
+        transform-origin: center;
+    }
+
+    50% {
+        transform: rotate(90deg);
+        transform-origin: center;
+    }
+
+    75% {
+        transform: rotate(135deg);
+        transform-origin: center;
+    }
+
+    100% {
+        transform: rotate(180deg);
+        transform-origin: center;
+    }
+
+}
+
+.squares {
+    border: 5px solid #E02C6D;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 400px;
+    left: 400px;
+}
+
+.dial-1 {
+    animation: clock 5s ease-in-out infinite normal;
+}
+
+
+.dial-2 {
+    animation: clock 5s ease-in-out infinite reverse;
+}
+
+.dial-3 {
+    animation: clock-2 5s ease-in-out infinite alternate;
+}
+
+.dial-4 {
+    animation: clock-2 5s ease-in-out infinite reverse;
+}
+
+.dial-4 h2{
+    text-align: end;
+}
+
 /* ----------------------------------------
                Icon Area Styles 
 -------------------------------------------*/
@@ -98,6 +197,10 @@ hr{
     border: 0.5px solid lightslategray;
     border-radius: 0.5px;
     width: 70%;
+}
+
+.icon-area{
+    margin-top: 25%;
 }
 .icons{
     display: flex;
